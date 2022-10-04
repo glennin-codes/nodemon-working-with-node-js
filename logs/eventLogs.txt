@@ -1,2 +1,0 @@
-20221003	15:35:31	e3a7b96d-f290-4cd0-89ba-1f69d9ea9f51	 log event emitted
-20221003	15:35:50	82674eb2-9871-4abe-aa3e-a6c00ff59d6b	 log event emitted
