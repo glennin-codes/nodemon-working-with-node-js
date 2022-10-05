@@ -17,7 +17,7 @@ const fsPromise=require('fs').promises
 const PORT= process.env.PORT || 3500;
 const server= http.createServer((req,res)=>{
     res.writeHead(200,{'content-Type': 'text/html'})
- if(req.url===path.join(__dirname,'views','index')){
+ if(req.url==='./'){
    const home=async()=>{
     try{
           const data =await fsPromise.readFile(path.join(__dirname,'views','index'),'utf8')
@@ -29,7 +29,7 @@ const server= http.createServer((req,res)=>{
  }
  home()
 
-}else if (req.url===path.join(__dirname ,'views' ,'about us')){
+}else if (req.url==='./about'){
     const aboutUs=async ()=>{
         try{
             const data2=await fsPromise.readFile(path.join(__dirname ,'views' ,'about us'),'utf8')
@@ -42,14 +42,14 @@ const server= http.createServer((req,res)=>{
 }else{
     const outPage= async()=>{
         try{
-             readFileSync(path.join(__dirname,'views','404'),'utf8',(err,dataEr)=>{
+             const data3 = fs.writeFile(path.join(__dirname,'views','404.html'),'page not found',(err)=>{
                 if(err){
                     console.log(err);
                 }else{
-                    const data3=dataEr
+                    res.end(data3)
                 }
             })
-            res.end(data3)
+            
         }catch(err){
             console.error(err);
 
