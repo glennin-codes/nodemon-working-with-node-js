@@ -1,0 +1,19 @@
+:root{
+    --prymaryColor:black;
+    --secondaryColor:blue;
+    --fontSize:2rem;
+    --font-family: 'Ubuntu',sans-serif;
+}
+body{
+    background-color:var(--prymaryColor);
+    height:100vh;
+
+}
+.hyper{
+    font-family:var(--font-family);
+    font-size: var(--fontSize);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
