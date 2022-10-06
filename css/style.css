@@ -1,11 +1,11 @@
 :root{
     --prymaryColor:black;
-    --secondaryColor:blue;
+    --secondaryColor:#bd09a8;
     --fontSize:2rem;
     --font-family: 'Ubuntu',sans-serif;
 }
 body{
-    background-color:var(--prymaryColor);
+    background-color:var(--secondaryColor);
     height:100vh;
 
 }
@@ -16,4 +16,5 @@ body{
     text-align: center;
     align-items: center;
     display: flex;
+    color: var(--prymaryColor);
 }
