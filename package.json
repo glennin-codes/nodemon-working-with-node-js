@@ -1,17 +1,17 @@
 {
-  "name": "starting server",
+  "name": "starting",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "expressServer.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node expressServer",
+    "dev": "nodemon expresServer"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/glennin-codes/nodemon-working-with-node-js.git"
   },
-  "author": "",
+  "author": "glen ayienda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/glennin-codes/nodemon-working-with-node-js/issues"
