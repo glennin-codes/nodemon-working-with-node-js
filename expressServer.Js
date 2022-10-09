@@ -1,3 +1,4 @@
+const { nextDay } = require('date-fns');
 const express = require('express');
 const app=express();
 const path=require ('path');
@@ -27,6 +28,29 @@ app.get('/old-page(.html)?',(req,res)=>{
 app.get('/*',(req,res)=>{
     res.status(404).sendFile(path.join(__dirname,'views','404.html'))
 })
-app.listen(PORT, ()=>console.log('server running at port ', PORT))
+
 //route handlers
 
+
+app.get('/new(.html)?',(req,res,next)=>{
+    console.log('getting new page started');
+    next();
+},(req,res)=>{
+    res.send('hello new friends');
+})
+//chaining route handklers
+const one = (req,res,next)=>{
+    console.log('one');
+    next()
+}
+const two = (req,res,next)=>{
+    console.log('two');
+    next()
+
+}
+const three = (req,res)=>{
+    console.log('three');
+    res.send('finished')
+}
+app.get('/chain(.html)?',[one,two,three]);
+app.listen(PORT, ()=>console.log('server running at port ', PORT));
