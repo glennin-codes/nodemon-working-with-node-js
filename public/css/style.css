@@ -17,4 +17,5 @@ body{
     align-items: center;
     display: flex;
     color: var(--prymaryColor);
+     margin-top: 25%;
 }
