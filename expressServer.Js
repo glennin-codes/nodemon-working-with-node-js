@@ -1,15 +1,33 @@
-const { nextDay } = require('date-fns');
+
 const express = require('express');
 const app=express();
 const path=require ('path');
+const logEvents=require('./middleware/logEvents')
 const PORT= process.env.PORT||3500
+//using middware
+//built in url to urlencoded data
+//to handle form data
+app.use(express.urlencoded({extended:false}))
 
-// app.get('/',(req,res)=>{
+app.use(express.json())
+app.use(express.static(path.join(__dirname,'/public')))
+
+
+//using custom middleware
+app.use((req,res,next)=>{
+    logEvents(`${req.method}\t ${req.header.origin}\t ${req.url}`,'reqLog.txt')
+    console.log(`${req.method},${req.path} `);
+    next();
+})
+
+
+// app.get('/',(req,res)=>{ 
 //     res.send('hello world')
 // })
 // app.listen(PORT,()=>{
-//     console.log(`server running at port ${P}`);
+//     console.log(`server running at port ${PORT}`);
 // })
+
 //making the extension optional in the borwser if its index(.html)?
 app.get('^/$|/index(.html)?' ,(req,res)=>{
     // res.sendFile('./views/index.html',{root:__dirname})
@@ -23,6 +41,7 @@ app.get('^/about|/about-us(.html)',(req,res)=>{
 app.get('/old-page(.html)?',(req,res)=>{
     res.redirect(301,'/index.html');
 })
+
 //if a user reaches out a page which isn't structured in the code
 
 app.get('/*',(req,res)=>{

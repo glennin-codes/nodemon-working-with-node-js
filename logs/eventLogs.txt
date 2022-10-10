@@ -1,0 +1,2 @@
+20221010	11:23:06	1b970235-1d38-42c1-95a4-f8e69687ddcd	 GET	 undefined	 /reqLog.txt
+20221010	11:23:09	7ee368d7-35d1-4efd-bdba-e004c31349cf	 GET	 undefined	 /favicon.ico
