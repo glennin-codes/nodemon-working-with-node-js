@@ -3,7 +3,26 @@ const express = require('express');
 const app=express();
 const path=require ('path');
 const {logger}=require('./middleware/logEvents')
+const cors = require('cors')
 const PORT= process.env.PORT||3500
+
+
+
+
+//using cross origin Resource sharing
+const whitelist=['http://www.google.com','http://127.0.0.1:5500/', 'http://localhost:3500']
+   const corsOption= {
+   origin:(origin,callback)=>{
+      if(whitelist.indexOf(origin)!== -1){
+        callback(null,true)
+      }else{
+        callback(new Error ('not allowed'));
+      }
+      
+   },
+   optionsSuccessStatus:200
+}
+app.use(cors(corsOption));  
 //using middware
 //built in url to urlencoded data
 //to handle form data
@@ -11,6 +30,8 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname,'/public')))
+
+
 
 
 //using custom middleware
