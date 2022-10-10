@@ -19,4 +19,9 @@ const { v4:uuid}= require('uuid')
         console.error(err);
     }
  }
-module.exports= logEvents
+ const logger = ((req,res,next)=>{
+    logEvents(`${req.method}\t ${req.header.origin}\t ${req.url}`,'reqLog.txt')
+    console.log(`${req.method},${req.path} `);
+    next();
+})
+module.exports= {logger, logEvents}
