@@ -1,1 +1,36 @@
 20221011	11:26:16	fde22777-0274-4372-bfd2-754c99d03c80	 Error:not allowed CORS
+20221011	12:34:37	9c9267dd-9e95-4218-bc7f-49634e5b0d44	 Error:ENOENT: no such file or directory, stat 'C:\Users\glenn\Desktop\nodemon\views\index.html'
+20221011	12:40:50	11bf225d-3bc7-4330-8801-d2ab0780e53f	 Error:ENOENT: no such file or directory, stat 'C:\Users\glenn\Desktop\nodemon\views\about-us.html'
+20221011	12:45:18	2174a514-47f7-457b-9dba-77df44f7b18b	 TypeError:res.sendFile is not a function
+20221011	12:45:21	78df2d39-b10e-439b-ad47-7789dfa439a1	 TypeError:res.sendFile is not a function
+20221011	12:47:09	62386b0e-25fc-46d2-b4c8-b2672ac9770b	 TypeError:res.sendFile is not a function
+20221011	12:47:11	3e4037dc-86c7-4771-aa2b-810379af86a1	 TypeError:res.sendFile is not a function
+20221011	12:47:11	a593b677-eb16-4e0b-a5b5-9fd88ecbf9d7	 TypeError:res.sendFile is not a function
+20221011	12:47:23	a276e4a4-8671-455c-9ae8-d86bf03e50a4	 TypeError:res.sendFile is not a function
+20221011	12:47:26	cdc985fd-fbbd-439e-964f-096daadd1cab	 TypeError:res.sendFile is not a function
+20221011	14:53:35	0a47dba0-2e7b-465e-96ad-a0b3a009ad4f	 TypeError:res.sendFile is not a function
+20221011	14:54:12	a97b0073-c866-4c83-87f9-361100073a12	 RangeNotSatisfiableError:Range Not Satisfiable
+20221011	14:54:37	49a8932a-3691-4475-9c51-c175cd1601c4	 TypeError:res.sendFile is not a function
+20221011	14:56:44	f9ee9a89-6f17-4157-8a6c-14f55374fb51	 TypeError:res.sendFile is not a function
+20221011	14:56:50	f934803f-d467-4d93-aca7-0a7167005865	 TypeError:res.sendFile is not a function
+20221011	14:56:50	4e37378a-79d6-48da-a53b-34dbab22ac1c	 TypeError:res.sendFile is not a function
+20221011	14:56:51	0241c59e-b0bc-4a7c-a6bc-7a09a6a571ce	 TypeError:res.sendFile is not a function
+20221011	14:56:51	beb7b7b1-24c8-40d5-bbd1-ac522da577b1	 TypeError:res.sendFile is not a function
+20221011	14:56:53	b770f145-7382-4d07-9ce3-4f83c0351859	 TypeError:res.sendFile is not a function
+20221011	14:57:46	6725ddab-8983-47a3-8ef7-5081aa3c139c	 RangeNotSatisfiableError:Range Not Satisfiable
+20221011	14:57:56	e1493d42-112f-445c-99f8-ebb35ccba586	 TypeError:res.sendFile is not a function
+20221011	14:59:03	d8d4599e-014b-4781-8feb-c84771149fd0	 TypeError:res.sendFile is not a function
+20221011	14:59:09	5a7039fc-c67b-46c7-afb0-022bb99d0424	 TypeError:res.sendFile is not a function
+20221011	15:00:15	62bce0e8-61fc-4912-bba3-c2cd7d122b63	 TypeError:res.sendFile is not a function
+20221011	15:00:17	c11e3282-1797-4126-9567-a10bdf9b9357	 TypeError:res.sendFile is not a function
+20221011	15:00:20	e2b56a94-8183-4aea-a48f-ad5d2250d217	 TypeError:res.sendFile is not a function
+20221011	15:00:26	d8ea626c-ff80-455c-9113-8d174af12573	 TypeError:res.sendFile is not a function
+20221011	15:01:06	082bf282-a8a8-4ae7-bb94-0fe17fc911e3	 TypeError:res.sendFile is not a function
+20221011	15:01:09	d208e6c6-c3e1-4449-b3c0-ca2e5fb688c7	 TypeError:res.sendFile is not a function
+20221011	15:01:12	b08e3ade-c9f3-4336-8889-f69d3f3986c1	 TypeError:res.sendFile is not a function
+20221011	15:33:59	79a3be57-f572-4ef2-a6e7-f2f07205e940	 TypeError:res.sendFile is not a function
+20221011	15:34:23	ff342096-15dc-4a4a-b092-ce4889ca84ee	 TypeError:res.sendFile is not a function
+20221011	15:36:23	377f688a-8e8f-4cec-b691-7fdc5652ab15	 TypeError:res.sendFile is not a function
+20221011	15:36:30	c494b6a2-fc0e-434d-9bcc-c5ef6dd80375	 TypeError:res.sendFile is not a function
+20221011	15:36:35	8b88dade-1500-40e0-9ba2-94211b0974d8	 TypeError:res.sendFile is not a function
+20221011	15:36:38	02290d5b-f4ee-4048-8192-2be2b0d0944a	 TypeError:res.sendFile is not a function

@@ -19,3 +19,10 @@ body{
     color: var(--prymaryColor);
      margin-top: 25%;
 }
+.imgView{
+    object-fit:fill;
+    height: 15rem;
+    width: 15rem;
+    
+    border-radius: 10px ;
+}
