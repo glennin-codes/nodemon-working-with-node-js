@@ -99,3 +99,16 @@
 20221011	15:54:54	af9c8068-2079-4329-8362-6edb8307248d	 GET	 undefined	 /public/css/style.css
 20221011	15:57:03	f4b9c92d-4aab-4325-b610-c2ef0910324b	 GET	 undefined	 /subdir/
 20221011	15:57:29	2b7d01f9-ad99-4f89-bfbd-5cf22487aa99	 GET	 undefined	 /public/img/pexels-thorn-yang-230659.jpg
+20221011	16:36:39	a02645eb-5680-46d3-b958-cd7bcf9028aa	 GET	 undefined	 /subdir/newpage/ght
+20221011	16:36:39	ac7572b2-82a2-4fd7-a648-c93a048ac758	 GET	 undefined	 /subdir/newpage/css/style.css
+20221011	16:43:17	79dc1a18-b29e-4f60-8f17-bd416dd6e109	 GET	 undefined	 /subdir/newpage/ght
+20221011	16:43:17	80d62ab2-87c4-4762-b86c-66019b36de28	 GET	 undefined	 /subdir/newpage/css/style.css
+20221011	16:43:22	fec2906c-dda0-4903-8b3c-9c3e27995690	 GET	 undefined	 /
+20221011	16:43:44	7abbebf1-7706-48ff-8033-1df35b9b2eab	 GET	 undefined	 /vnbvsd
+20221011	16:43:47	f13f42b8-1cc5-4896-8b35-bd88f3db92ae	 GET	 undefined	 /
+20221011	16:44:16	01716ab2-4398-4578-903f-8cdb7fe2baaa	 GET	 undefined	 /subdir/dnjns
+20221011	16:44:21	a64b6326-6d94-4c8b-a55b-afa8a33f6993	 GET	 undefined	 /subdir/dnjns
+20221011	16:44:27	594dd047-47b5-46eb-852a-99df20192641	 GET	 undefined	 /subdir/views
+20221011	16:44:33	229ba3db-3d0b-4e06-96ef-d2c6a631cf3d	 GET	 undefined	 /subdir/views/div
+20221011	16:44:33	02625b5e-4ab3-4c36-91f4-39324f414f12	 GET	 undefined	 /subdir/views/css/style.css
+20221011	16:45:04	2c1e4716-9bc3-42cd-84bd-5bd3f54732d1	 GET	 undefined	 /subdir/views
