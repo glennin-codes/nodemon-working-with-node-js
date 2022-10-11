@@ -13,7 +13,7 @@ const PORT= process.env.PORT||3500
 const whitelist=['http://www.google.com','http://127.0.0.1:5500/', 'http://localhost:3500']
    const corsOption= {
    origin:(origin,callback)=>{
-      if(whitelist.indexOf(origin)!== -1){
+      if(whitelist.indexOf(origin)!== -1||!origin){
         callback(null,true)
       }else{
         callback(new Error ('not allowed'));
@@ -89,4 +89,9 @@ const three = (req,res)=>{
     res.send('finished')
 }
 app.get('/chain(.html)?',[one,two,three]);
+//error handler for middleware
+app.use(function(err,req,res,next){
+    console.error(err.stack);
+    res.status(500).send(err.message)
+})
 app.listen(PORT, ()=>console.log('server running at port ', PORT));
