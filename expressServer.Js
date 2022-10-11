@@ -5,6 +5,7 @@ const path=require ('path');
 const {logger}=require('./middleware/logEvents')
 const errHandler=require('./middleware/errHandler')
 const cors = require('cors')
+const router=require('./routers/subdir')
 const PORT= process.env.PORT||3500
 
 
@@ -30,9 +31,14 @@ app.use(cors(corsOption));
 app.use(express.urlencoded({extended:false}))
 
 app.use(express.json())
-app.use(express.static(path.join(__dirname,'/public')))
+//sending static files
+
+app.use('/',express.static(path.join(__dirname,'/public')))
+app.use( '/subdir',express.static(path.join(__dirname, '/public')))
 
 
+//using routers
+app.use('/subdir',require('./routers/subdir'))
 
 
 //using custom middleware
@@ -55,7 +61,7 @@ app.get('^/$|/index(.html)?' ,(req,res)=>{
 app.get('^/about|/about-us(.html)',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','about-us.html'))
 });
-//riodirecting to homepage
+//ridirecting to homepage
 app.get('/old-page(.html)?',(req,res)=>{
     res.redirect(301,'/index.html');
 })
