@@ -1,0 +1,1 @@
+20221011	11:26:16	fde22777-0274-4372-bfd2-754c99d03c80	 Error:not allowed CORS
