@@ -3,6 +3,7 @@ const express = require('express');
 const app=express();
 const path=require ('path');
 const {logger}=require('./middleware/logEvents')
+const errHandler=require('./middleware/errHandler')
 const cors = require('cors')
 const PORT= process.env.PORT||3500
 
@@ -16,7 +17,7 @@ const whitelist=['http://www.google.com','http://127.0.0.1:5500/', 'http://local
       if(whitelist.indexOf(origin)!== -1||!origin){
         callback(null,true)
       }else{
-        callback(new Error ('not allowed'));
+        callback(new Error ('not allowed CORS'));
       }
       
    },
@@ -90,8 +91,5 @@ const three = (req,res)=>{
 }
 app.get('/chain(.html)?',[one,two,three]);
 //error handler for middleware
-app.use(function(err,req,res,next){
-    console.error(err.stack);
-    res.status(500).send(err.message)
-})
+app.use(errHandler)
 app.listen(PORT, ()=>console.log('server running at port ', PORT));
