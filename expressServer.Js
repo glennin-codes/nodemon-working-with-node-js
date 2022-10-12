@@ -38,7 +38,11 @@ app.use( '/subdir',express.static(path.join(__dirname, '/public')))
 
 
 //using routers
+//working with rest api's
+app.use('/',require('./routers/route'))
 app.use('/subdir',require('./routers/subdir'))
+app.use('/employees',require('./routers/api/employees'))
+
 
 
 //using custom middleware
@@ -53,36 +57,6 @@ app.use(logger)
 // })
 
 //making the extension optional in the borwser if its index(.html)?
-app.get('^/$|/index(.html)?' ,(req,res)=>{
-    // res.sendFile('./views/index.html',{root:__dirname})
-    res.sendFile(path.join(__dirname,'views','index.html'))
-})
-
-app.get('^/about|/about-us(.html)',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','about-us.html'))
-});
-//ridirecting to homepage
-app.get('/old-page(.html)?',(req,res)=>{
-    res.redirect(301,'/index.html');
-})
-
-//if a user reaches out a page which isn't structured in the code
-
-// app.get('/*',(req,res)=>{
-//     res.status(404).sendFile(path.join(__dirname,'views','404.html'))
-// })
- //route handlers app.all
- app.all('*', (req,res)=>{
-    res.status(404);
-    if(req.accepts('html')){
-        res.sendFile(path.join(__dirname,'views','404.html' ))
-    }else if(req.accepts('json')){
-        res.json({'error':'404 not found'})
-    }
-    else{
-        res.type('txt').send('404 Not Found')
-    }
- })
 
 
 app.get('/new(.html)?',(req,res,next)=>{
