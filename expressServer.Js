@@ -5,25 +5,14 @@ const path=require ('path');
 const {logger}=require('./middleware/logEvents')
 const errHandler=require('./middleware/errHandler')
 const cors = require('cors')
+const corsOption=require('./config/corsOption')
 const router=require('./routers/subdir')
 const PORT= process.env.PORT||3500
 
 
 
 
-//using cross origin Resource sharing
-const whitelist=['http://www.google.com','http://127.0.0.1:5500/', 'http://localhost:3500']
-   const corsOption= {
-   origin:(origin,callback)=>{
-      if(whitelist.indexOf(origin)!== -1||!origin){
-        callback(null,true)
-      }else{
-        callback(new Error ('not allowed CORS'));
-      }
-      
-   },
-   optionsSuccessStatus:200
-}
+
 app.use(cors(corsOption));  
 //using middware
 //built in url to urlencoded data
