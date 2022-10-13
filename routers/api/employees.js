@@ -1,38 +1,20 @@
 const express=require('express');
 const router=express.Router();
 const path=require('path');
-const data={};
-data.employees=require('../../data/employees.json')//like connecting to a database
-
+const employeesController=require('../../controllers/employeesController')
 
 router.route('/')
     //reading
-      .get((req,res)=>{
-        res.json(data.employees);
-      })
+      .get(employeesController.readingEmployees)
       //creating
-      .post((req,res)=>{
-        res.json({
-                "firstname" :req.body.firstname,
-                "lastname"  : req.body.lastname
-        })
-      })
+      .post(employeesController.creatingEmployees)
       //apdating
-      .put((req,res)=>{
-        res.json({
-            "firstname" :req.body.firstname,
-            "lastname"  : req.body.lastname
-        })
-      })
+      .put(employeesController.updatingEmployees)
       //deleting
-      .delete((req,res)=>{
-        res.json({"id":req.body.id})
-      })
+      .delete(employeesController.deletingEmployees)
       
       router.route('/:id')
-      .get((req,res)=>{
-        res.json({"id":req.body.id})
-      })
+      .get(employeesController.readingParticularEmp)
 
       module.exports=router;
 
