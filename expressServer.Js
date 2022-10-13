@@ -5,7 +5,7 @@ const path=require ('path');
 const {logger}=require('./middleware/logEvents')
 const errHandler=require('./middleware/errHandler')
 const cors = require('cors')
-const corsOption=require('./config/corsOption')
+const {corsOption}=require('./config/corsOption')
 const router=require('./routers/subdir')
 const PORT= process.env.PORT||3500
 
