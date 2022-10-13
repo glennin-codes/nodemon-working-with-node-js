@@ -34,3 +34,11 @@
 20221011	15:36:30	c494b6a2-fc0e-434d-9bcc-c5ef6dd80375	 TypeError:res.sendFile is not a function
 20221011	15:36:35	8b88dade-1500-40e0-9ba2-94211b0974d8	 TypeError:res.sendFile is not a function
 20221011	15:36:38	02290d5b-f4ee-4048-8192-2be2b0d0944a	 TypeError:res.sendFile is not a function
+20221013	00:40:39	a940a098-ea04-4088-b9fd-372ef7e5215d	 SyntaxError:Unexpected token " in JSON at position 0
+20221013	00:42:16	97dd75b2-7f3a-4c4f-96e3-e0b90d7d6a32	 SyntaxError:Unexpected token } in JSON at position 55
+20221013	00:42:41	badf51ed-62be-46ae-bc44-3b7d2538455c	 SyntaxError:Unexpected token } in JSON at position 55
+20221013	00:42:55	39fdc260-0597-4749-a436-b6f4c0dd5208	 SyntaxError:Unexpected token } in JSON at position 55
+20221013	00:43:53	8045b6d1-2b4a-4022-b44c-5999290057d2	 SyntaxError:Unexpected token " in JSON at position 0
+20221013	00:48:21	5f5af6ef-723d-41e1-979d-e826d1fdc493	 SyntaxError:Unexpected token } in JSON at position 15
+20221013	00:48:57	9d0a2df5-fc42-46d0-90ec-b7381c1edd51	 SyntaxError:Unexpected string in JSON at position 15
+20221013	00:49:53	17c598ef-4c18-422d-946d-5f26e3baa9e3	 SyntaxError:Unexpected end of JSON input
