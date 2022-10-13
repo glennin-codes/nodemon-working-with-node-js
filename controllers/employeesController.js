@@ -47,7 +47,11 @@ const readingEmployees= (req,res)=>{
       res.json(data.employees)
     }
   const readingParticularEmp=(req,res)=>{
-
+    const employeee=data.employee.find(emp=>emp.id===parseInt(req.body.id));
+    if(!employeee){
+      res.status(401).json({"messages":`employee ${req.body.id} cant be found`})
+    }
+    res.json(employeee)
   }
   
 
