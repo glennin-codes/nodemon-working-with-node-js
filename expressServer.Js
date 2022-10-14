@@ -31,7 +31,7 @@ app.use( '/subdir',express.static(path.join(__dirname, '/public')))
 app.use('/',require('./routers/route'))
 app.use('/subdir',require('./routers/subdir'))
 app.use('/employees',require('./routers/api/employees'))
-
+app.use('/register',require('./routers/api/register'))
 app.all('*', (req,res)=>{
     res.status(404);
     if(req.accepts('html')){
