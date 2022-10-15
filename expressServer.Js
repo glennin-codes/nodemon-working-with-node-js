@@ -32,6 +32,7 @@ app.use('/',require('./routers/route'))
 app.use('/subdir',require('./routers/subdir'))
 app.use('/employees',require('./routers/api/employees'))
 app.use('/register',require('./routers/api/register'))
+app.use('/login',require('./routers/api/login'));
 app.all('*', (req,res)=>{
     res.status(404);
     if(req.accepts('html')){
